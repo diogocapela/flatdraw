@@ -1,10 +1,10 @@
-# flatdraw
+# Flatdraw
 
-A simple canvas drawing web application built using [TypeScript](https://typescriptlang.org), [React](https://react.dev), and [Next.js](https://nextjs.org).
+A simple canvas drawing web application with responsive UI. Built using [TypeScript](https://typescriptlang.org), [React](https://react.dev), and [Next.js](https://nextjs.org).
 
 **Live demo:** [flatdraw.com](https://flatdraw.com)
 
-![](./docs/screenshot.png)
+[![](./docs/screenshot.png)](https://flatdraw.com)
 
 ## Requirements
 
