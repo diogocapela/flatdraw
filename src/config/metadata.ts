@@ -1,0 +1,27 @@
+import packageJson from '../../package.json';
+
+const cleanUrl = 'flatdraw.com';
+
+const metadata = {
+  website: {
+    name: 'Flatdraw',
+    slogan: 'Simple Canvas Drawing App',
+    description: 'A simple canvas drawing web application built using TypeScript, React, and Next.js.',
+    cleanUrl,
+    email: `hello@${cleanUrl}`,
+    url: `https://${cleanUrl}`,
+    manifest: `https://${cleanUrl}/manifest.json`,
+    thumbnail: `https://${cleanUrl}/images/thumbnail.jpg`,
+    locale: 'en',
+    themeColor: '#FFFFFF',
+    version: packageJson.version,
+  },
+  links: {
+    github: 'https://github.com/diogocapela/flatdraw',
+  },
+  services: {
+    googleAnalyticsMeasurementId: 'G-EZDBLF0NEZ',
+  },
+};
+
+export default metadata;

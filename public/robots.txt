@@ -1,0 +1,4 @@
+Sitemap: https://flatdraw.com/sitemap.xml
+
+User-agent: *
+Allow: /
