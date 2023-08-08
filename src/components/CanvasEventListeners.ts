@@ -62,7 +62,7 @@ export default function CanvasEventListeners() {
     const onKeyDown = (event: KeyboardEvent) => {
       if (isModalActive) return;
       if (['Backspace', 'Delete'].includes(event.key) && activeObjectId) {
-        //deleteCanvasObject(activeObjectId);
+        deleteCanvasObject(activeObjectId);
       }
     };
     window.addEventListener('keydown', onKeyDown);
