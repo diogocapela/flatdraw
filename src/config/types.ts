@@ -95,13 +95,13 @@ export interface UnsplashImage {
   description: string;
   unsplashUrl: string;
   urls: {
-    //full: string;
     large: string;
     medium: string;
     small: string;
   };
   author: {
     name: string;
+    url: string;
   };
   query: string;
   fetchedAt: string;

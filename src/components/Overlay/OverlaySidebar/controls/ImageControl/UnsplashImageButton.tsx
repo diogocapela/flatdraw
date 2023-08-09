@@ -101,8 +101,8 @@ export default function UnsplashImageButton({ image, pushImageObject }: Props) {
           sx={{ opacity: 0.75 }}
           icon={<BiUser size={14} />}
           onClick={() => {
-            if (image.unsplashUrl) {
-              window.open(image.unsplashUrl, '_blank');
+            if (image.author.url) {
+              window.open(image.author.url, '_blank');
             }
           }}
         >

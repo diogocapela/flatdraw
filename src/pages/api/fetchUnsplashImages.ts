@@ -1,6 +1,7 @@
 import axios from 'axios';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
+import metadata from '~/config/metadata';
 import type { UnsplashImage } from '~/config/types';
 
 export default async function handler(
@@ -100,6 +101,7 @@ export default async function handler(
           description: image.description || image.alt_description || '',
           author: {
             name: `${image.user.first_name ?? ''} ${image.user.last_name ?? ''}`.trim(),
+            url: `${image.user.links.html}?utm_source=${metadata.website.name}&utm_medium=referral`,
           },
           query,
           fetchedAt: new Date().toISOString(),
