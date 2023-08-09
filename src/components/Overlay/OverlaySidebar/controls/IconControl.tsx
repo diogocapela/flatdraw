@@ -42,7 +42,6 @@ import SidebarItemHeader from '../components/SidebarItemHeader';
 const iconEntries = Object.entries({
   ...aiIcons,
   ...biIcons,
-  //...bsIcons, not working
   ...cgIcons,
   ...ciIcons,
   ...diIcons,

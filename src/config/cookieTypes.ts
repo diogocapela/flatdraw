@@ -1,5 +1,5 @@
 export const CookieTypes = {
   UserAcceptsCookies: '_uac',
   DeviceHash: '_dh',
-  ColorScheme: '_ch',
+  ColorScheme: '_cs',
 } satisfies Record<string, string>;

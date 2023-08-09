@@ -1,4 +1,4 @@
-import packageJson from '../../package.json';
+import packageJson from '~/../package.json';
 
 const cleanUrl = 'flatdraw.com';
 
@@ -6,7 +6,7 @@ const metadata = {
   website: {
     name: 'Flatdraw',
     slogan: 'Simple Canvas Drawing App',
-    description: 'A simple canvas drawing web application built using TypeScript, React, and Next.js.',
+    description: 'Open-source canvas drawing web application, built with TypeScript, React, and Next.js.',
     cleanUrl,
     email: `hello@${cleanUrl}`,
     url: `https://${cleanUrl}`,

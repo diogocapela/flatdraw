@@ -61,7 +61,10 @@ export default function CanvasEventListeners() {
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (isModalActive) return;
-      if (['Backspace', 'Delete'].includes(event.key) && activeObjectId) {
+
+      const isInputFocused = ['input', 'textarea'].includes(document.activeElement?.localName || '');
+
+      if (['Backspace', 'Delete'].includes(event.key) && !isInputFocused && activeObjectId) {
         deleteCanvasObject(activeObjectId);
       }
     };
@@ -71,7 +74,7 @@ export default function CanvasEventListeners() {
     };
   }, [isModalActive, activeObjectId, deleteCanvasObject]);
 
-  // Onbeforeunload event
+  // Beforeunload event
 
   useEffect(() => {
     const onBeforeUnload = () => {
@@ -84,7 +87,7 @@ export default function CanvasEventListeners() {
     };
   }, []);
 
-  // gesturestart event
+  // Gesturestart event
 
   useEffect(() => {
     const onGestureStart = (event: Event) => {

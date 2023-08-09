@@ -85,8 +85,6 @@ export default function ColorPicker({ color, onChange, disableAlpha = true, type
     bottom: ${theme.variables.overlayGutter};
     right: ${theme.variables.overlayGutter};
 
-    // TODO: Add prop to not be position fixed because of the canvas color picker
-
     ${theme.medias.gteMedium} {
       bottom: auto;
       top: calc(${theme.variables.overlayGutter} + ${theme.variables.overlayGutter} + ${theme.variables.topNavbarHeight});

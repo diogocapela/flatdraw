@@ -11,11 +11,9 @@ export default function canvasInit({
 }) {
   if (!canvas || !context) return;
 
-  canvas.width = canvasWidth; // * 2;
-  canvas.height = canvasHeight; // * 2;
+  canvas.width = canvasWidth;
+  canvas.height = canvasHeight;
 
   canvas.style.width = `${canvasWidth}px`;
   canvas.style.height = `${canvasHeight}px`;
-
-  //context.scale(2, 2);
 }

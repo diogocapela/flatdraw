@@ -94,8 +94,6 @@ export default function ImageControl({ pageSize = 60 }: Props) {
 
   const hasAlreadyFetched = Object.values(unsplashImagesMap).some((image) => image.query === defaultParams.searchQueryImages);
 
-  // console.log({ unsplashImagesMap });
-
   useEffect(() => {
     setVisibleImages(pageSize);
   }, [pageSize, defaultParams.searchQueryImages]);
@@ -256,24 +254,11 @@ export default function ImageControl({ pageSize = 60 }: Props) {
         </LoadingDiv>
       )}
       {hasImages && !isLoading && (
-        <>
-          <GridDiv>
-            {imagesToRender.map((image) => (
-              <UnsplashImageButton key={image.id} image={image} pushImageObject={pushImageObject} />
-            ))}
-          </GridDiv>
-          {/*
-          <Button
-            variant="default"
-            size="xs"
-            onClick={() => {
-              setVisibleImages((prevVisibleImages) => prevVisibleImages + pageSize);
-            }}
-          >
-            Load more images
-          </Button>
-            */}
-        </>
+        <GridDiv>
+          {imagesToRender.map((image) => (
+            <UnsplashImageButton key={image.id} image={image} pushImageObject={pushImageObject} />
+          ))}
+        </GridDiv>
       )}
       {!isLoading && (
         <PoweredByP>
