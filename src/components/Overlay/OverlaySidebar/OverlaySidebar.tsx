@@ -105,7 +105,7 @@ export default function OverlaySidebar() {
 
   const activeObject = canvasObjects.find((object) => object.id === activeObjectId);
 
-  const activeNodes = {
+  const activeNodes: Record<string, boolean> = {
     icons: userMode === 'icon',
     images: userMode === 'image',
     frame: !!activeObject,
@@ -118,7 +118,7 @@ export default function OverlaySidebar() {
       activeObject.type !== 'icon' &&
       activeObject.type !== 'image' &&
       (activeObject?.strokeWidth || 0) > 0,
-    borderRadius: activeObject?.type === 'rectangle' || activeObject?.type === 'ellipse',
+    borderRadius: activeObject?.type === 'rectangle',
     text: activeObject?.type === 'text',
     opacity: !!activeObject,
     layer: !!activeObject,

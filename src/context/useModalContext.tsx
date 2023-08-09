@@ -45,9 +45,7 @@ export function ModalContextProvider({ children }: { children: ReactNode }) {
             padding: 0,
           },
         },
-        onClose: () => {
-          // Don't need to do nothing
-        },
+        onClose: closeModal,
       });
     },
     [closeModal]
