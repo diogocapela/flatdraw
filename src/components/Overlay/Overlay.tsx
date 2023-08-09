@@ -36,7 +36,7 @@ const LeftDiv = styled('div')`
   left: 0;
   width: ${theme.variables.sidebarWidth};
 
-  ${theme.medias.gteMedium} {
+  ${theme.medias.gteSmall} {
     top: calc(${theme.variables.topNavbarHeight} + ${theme.variables.overlayGutter});
   }
 `;

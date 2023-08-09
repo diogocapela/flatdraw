@@ -114,12 +114,15 @@ export default function App({ Component, pageProps, router }: AppProps) {
         <meta name="theme-color" content={metadata.website.themeColor} />
         <meta name="msapplication-TileColor" content={metadata.website.themeColor} />
 
-        {/* SEO */}
+        {/* Search Engines */}
         <meta name="robots" content="index, follow" />
 
         {/* Name */}
         <meta name="application-name" content={metadata.website.name} />
         <meta name="copyright" content={metadata.website.name} />
+        <meta name="author" content={metadata.website.name} />
+        <meta name="owner" content={metadata.website.name} />
+        <meta name="designer" content={metadata.website.name} />
         <meta property="og:site_name" content={metadata.website.name} />
 
         {/* Page URL */}
@@ -127,9 +130,11 @@ export default function App({ Component, pageProps, router }: AppProps) {
         <meta property="og:url" content={pageUrl} />
         <link rel="canonical" href={pageUrl} />
 
-        {/* Miscellaneous */}
+        {/* Social */}
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content={`@${metadata.social.twitter}`} />
+        <meta name="twitter:creator" content={`@${metadata.social.twitter}`} />
       </NextHead>
       <Global styles={globalStyles} />
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>

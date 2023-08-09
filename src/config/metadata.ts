@@ -16,6 +16,9 @@ const metadata = {
     themeColor: '#FFFFFF',
     version: packageJson.version,
   },
+  social: {
+    twitter: 'flatdraw',
+  },
   links: {
     github: 'https://github.com/diogocapela/flatdraw',
   },

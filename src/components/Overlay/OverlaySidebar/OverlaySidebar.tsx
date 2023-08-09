@@ -49,7 +49,7 @@ const Aside = styled('aside')`
   max-height: 270px;
   overflow-y: auto;
 
-  ${theme.medias.gteMedium} {
+  ${theme.medias.gteSmall} {
     max-height: calc(100vh - ${theme.variables.topNavbarHeight} - ${theme.variables.overlayGutter} * 3);
   }
 `;
