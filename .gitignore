@@ -6,6 +6,7 @@
 
 # Build
 /dist
+/out
 
 # Environment Variables
 .env
