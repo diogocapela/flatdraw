@@ -127,7 +127,6 @@ export default function Canvas() {
               relativeMouseY: initialDrawingPositionRef.current.y,
             });
             if (isWithinBounds) {
-              // console.log('click', boxName);
               isResizing = true;
               setActionMode({
                 type: 'isResizing',
