@@ -12,9 +12,11 @@
   "author": "Diogo Capela",
   "license": "MIT",
   "scripts": {
+    "postinstall": "node -r esm scripts/postinstall.ts",
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
+    "preview": "npm run build && npm run export && wrangler pages dev out --port 3001",
     "start": "next start",
     "lint": "next lint"
   },
@@ -46,11 +48,11 @@
     "svg-path-bbox": "1.2.4",
     "svgpath": "2.6.0",
     "typed-helpers": "0.0.4",
-    "typescript": "5.0.2",
     "uuid": "9.0.0",
     "zustand": "4.3.6"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "4.20230807.0",
     "@types/canvas-txt": "3.0.0",
     "@types/lodash": "4.14.191",
     "@types/react-color": "3.0.6",
@@ -64,7 +66,10 @@
     "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-react": "7.33.1",
     "eslint-plugin-react-hooks": "4.6.0",
+    "esm": "3.2.25",
     "prettier": "3.0.1",
-    "sitemaps": "2.0.4"
+    "sitemaps": "2.0.4",
+    "typescript": "5.1.6",
+    "wrangler": "3.5.0"
   }
 }

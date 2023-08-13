@@ -14,7 +14,7 @@ import useCanvasObjects from '~/store/useCanvasObjects';
 import useDefaultParams from '~/store/useDefaultParams';
 import useUnsplashImages from '~/store/useUnsplashImages';
 import useUserMode from '~/store/useUserMode';
-import fetchUnsplashImages from '~/utils/api/fetchUnsplashImages';
+import fetchImages from '~/utils/api/fetchImages';
 import fileToBase64 from '~/utils/fileToBase64';
 import generateUniqueId from '~/utils/generateUniqueId';
 import getDimensionsFromImage from '~/utils/getDimensionsFromImage';
@@ -217,7 +217,7 @@ export default function ImageControl({ pageSize = 60 }: Props) {
             if (defaultParams.searchQueryImages) {
               setIsLoading(true);
               try {
-                const images = await fetchUnsplashImages({ query: defaultParams.searchQueryImages, page: 1 });
+                const images = await fetchImages({ query: defaultParams.searchQueryImages, page: 1 });
                 setUnsplashImages(images);
               } catch (error) {
                 console.error(error);
