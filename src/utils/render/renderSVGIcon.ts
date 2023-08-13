@@ -4,7 +4,6 @@ import type { IconObject } from '~/config/types';
 import getDimensionsFromSVGIconObject from '~/utils/getDimensionsFromSVGIconObject';
 import hexToRgba from '~/utils/hexToRgba';
 
-
 export default function renderSVGIcon({
   context,
   x,

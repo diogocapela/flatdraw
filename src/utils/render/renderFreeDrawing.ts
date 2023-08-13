@@ -2,7 +2,6 @@ import type { FreeDrawObject } from '~/config/types';
 import getPositionFromDrawingPoints from '~/utils/getPositionFromDrawingPoints';
 import hexToRgba from '~/utils/hexToRgba';
 
-
 export default function renderFreeDrawing({
   context,
   x,
