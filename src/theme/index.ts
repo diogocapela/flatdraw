@@ -1,7 +1,7 @@
-import * as colors from './colors';
-import * as layers from './layers';
-import * as medias from './medias';
-import * as variables from './variables';
+import * as colors from '~/theme/colors';
+import * as layers from '~/theme/layers';
+import * as medias from '~/theme/medias';
+import * as variables from '~/theme/variables';
 
 const theme = {
   colors,

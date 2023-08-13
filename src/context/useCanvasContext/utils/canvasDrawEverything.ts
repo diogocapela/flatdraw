@@ -1,12 +1,12 @@
 import { CANVAS_CONTROLS_OVERLAY } from '~/config/globalElementIds';
 import type { ActionMode, CanvasObject, CanvasWorkingSize, ScrollPosition } from '~/config/types';
 import getControlPoints from '~/utils/getControlPoints';
-import renderEllipse from '~/utils/renderEllipse';
-import renderFreeDrawing from '~/utils/renderFreeDrawing';
-import renderImage from '~/utils/renderImage';
-import renderRectangle from '~/utils/renderRectangle';
-import renderSVGIcon from '~/utils/renderSVGIcon';
-import renderText from '~/utils/renderText';
+import renderEllipse from '~/utils/render/renderEllipse';
+import renderFreeDrawing from '~/utils/render/renderFreeDrawing';
+import renderImage from '~/utils/render/renderImage';
+import renderRectangle from '~/utils/render/renderRectangle';
+import renderSVGIcon from '~/utils/render/renderSVGIcon';
+import renderText from '~/utils/render/renderText';
 
 export default function canvasDrawEverything({
   canvas,

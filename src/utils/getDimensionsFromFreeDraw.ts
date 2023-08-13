@@ -1,6 +1,5 @@
 import type { CanvasObject, ObjectDimensions } from '~/config/types';
-
-import getPositionFromDrawingPoints from './getPositionFromDrawingPoints';
+import getPositionFromDrawingPoints from '~/utils/getPositionFromDrawingPoints';
 
 export default function getDimensionsFromFreeDraw({
   freeDrawObject,

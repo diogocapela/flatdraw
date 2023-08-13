@@ -3,8 +3,8 @@ import React, { useEffect, useRef, useState } from 'react';
 
 import { TRANSPARENT_BACKGROUND_IMAGE } from '~/config/constants';
 import { CANVAS_PREVIEW_UNIQUE_ID } from '~/config/globalElementIds';
-import canvasDrawEverything from '~/context/canvas/utils/canvasDrawEverything';
-import canvasInit from '~/context/canvas/utils/canvasInit';
+import canvasDrawEverything from '~/context/useCanvasContext/utils/canvasDrawEverything';
+import canvasInit from '~/context/useCanvasContext/utils/canvasInit';
 import useColorSchemeContext from '~/context/useColorSchemeContext';
 import useActionMode from '~/store/useActionMode';
 import useActiveObjectId from '~/store/useActiveObjectId';

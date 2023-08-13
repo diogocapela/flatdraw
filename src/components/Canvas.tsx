@@ -5,7 +5,7 @@ import { TRANSPARENT_BACKGROUND_IMAGE } from '~/config/constants';
 import { APP_FIXED_MAIN_UNIQUE_ID } from '~/config/globalElementIds';
 import { CANVAS_CONTROLS_OVERLAY } from '~/config/globalElementIds';
 import type { ActionModeOption } from '~/config/types';
-import useCanvasContext from '~/context/canvas/useCanvasContext';
+import useCanvasContext from '~/context/useCanvasContext';
 import useActionMode from '~/store/useActionMode';
 import useActiveObjectId from '~/store/useActiveObjectId';
 import useCanvasObjects from '~/store/useCanvasObjects';

@@ -13,7 +13,7 @@ import '~/theme/styles/global.css';
 import LoadingOverlay from '~/components/LoadingOverlay';
 import metadata from '~/config/metadata';
 import { DEFAULT_COLOR_SCHEME } from '~/config/settings';
-import { CanvasContextProvider } from '~/context/canvas/useCanvasContext';
+import { CanvasContextProvider } from '~/context/useCanvasContext/useCanvasContext';
 import { ColorSchemeContextProvider } from '~/context/useColorSchemeContext';
 import { ModalContextProvider } from '~/context/useModalContext';
 import useCookies from '~/hooks/useCookies';

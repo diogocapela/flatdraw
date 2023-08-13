@@ -5,7 +5,7 @@ import { RxHeight, RxWidth } from 'react-icons/rx';
 import { TbTrashX } from 'react-icons/tb';
 
 import ColorPicker from '~/components/ColorPicker';
-import useCanvasContext from '~/context/canvas/useCanvasContext';
+import useCanvasContext from '~/context/useCanvasContext';
 import useCanvasBackgroundColor from '~/store/useCanvasBackgroundColor';
 import useCanvasObjects from '~/store/useCanvasObjects';
 import useCanvasWorkingSize from '~/store/useCanvasWorkingSize';

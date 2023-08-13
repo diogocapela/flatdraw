@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 import { APP_FIXED_MAIN_UNIQUE_ID, CANVAS_CONTROLS_OVERLAY } from '~/config/globalElementIds';
 import { UserMode } from '~/config/types';
-import useCanvasContext from '~/context/canvas/useCanvasContext';
+import useCanvasContext from '~/context/useCanvasContext';
 import useModalContext from '~/context/useModalContext';
 import useActiveObjectId from '~/store/useActiveObjectId';
 import useCanvasObjects from '~/store/useCanvasObjects';

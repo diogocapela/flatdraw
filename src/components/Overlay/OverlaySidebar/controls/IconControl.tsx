@@ -29,7 +29,7 @@ import * as tiIcons from 'react-icons/ti';
 import * as vscIcons from 'react-icons/vsc';
 import * as wiIcons from 'react-icons/wi';
 
-import useCanvasContext from '~/context/canvas/useCanvasContext';
+import useCanvasContext from '~/context/useCanvasContext';
 import useActiveObjectId from '~/store/useActiveObjectId';
 import useCanvasObjects from '~/store/useCanvasObjects';
 import useDefaultParams from '~/store/useDefaultParams';

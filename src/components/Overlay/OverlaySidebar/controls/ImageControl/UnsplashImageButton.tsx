@@ -7,7 +7,7 @@ import { CgClose } from 'react-icons/cg';
 import { MdDownload } from 'react-icons/md';
 
 import type { ObjectDimensions, UnsplashImage } from '~/config/types';
-import useCanvasContext from '~/context/canvas/useCanvasContext';
+import useCanvasContext from '~/context/useCanvasContext';
 import getDimensionsFromImage from '~/utils/getDimensionsFromImage';
 import getImageElementFromUrl from '~/utils/getImageElementFromUrl';
 import notification from '~/utils/notification';

@@ -1,8 +1,7 @@
 import canvasTxt from 'canvas-txt';
 
 import type { TextObject } from '~/config/types';
-
-import hexToRgba from './hexToRgba';
+import hexToRgba from '~/utils/hexToRgba';
 
 export default function renderText({
   context,

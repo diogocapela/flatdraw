@@ -8,7 +8,7 @@ import { FaPlus, FaSearch, FaUnsplash, FaUpload } from 'react-icons/fa';
 
 import { UnderlineLink } from '~/components/Link';
 import SidebarItemHeader from '~/components/Overlay/OverlaySidebar/components/SidebarItemHeader';
-import useCanvasContext from '~/context/canvas/useCanvasContext';
+import useCanvasContext from '~/context/useCanvasContext';
 import useActiveObjectId from '~/store/useActiveObjectId';
 import useCanvasObjects from '~/store/useCanvasObjects';
 import useDefaultParams from '~/store/useDefaultParams';

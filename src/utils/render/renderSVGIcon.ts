@@ -1,9 +1,9 @@
 import svgpath from 'svgpath';
 
 import type { IconObject } from '~/config/types';
+import getDimensionsFromSVGIconObject from '~/utils/getDimensionsFromSVGIconObject';
 import hexToRgba from '~/utils/hexToRgba';
 
-import getDimensionsFromSVGIconObject from './getDimensionsFromSVGIconObject';
 
 export default function renderSVGIcon({
   context,

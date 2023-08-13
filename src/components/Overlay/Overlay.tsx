@@ -1,12 +1,11 @@
 import styled from '@emotion/styled';
 import React from 'react';
 
+import OverlayMenu from '~/components/Overlay/OverlayMenu';
+import OverlayNavbar from '~/components/Overlay/OverlayNavbar';
+import OverlaySidebar from '~/components/Overlay/OverlaySidebar';
+import OverlayZoom from '~/components/Overlay/OverlayZoom';
 import theme from '~/theme';
-
-import OverlayMenu from './OverlayMenu/OverlayMenu';
-import OverlayNavbar from './OverlayNavbar';
-import OverlaySidebar from './OverlaySidebar';
-import OverlayZoom from './OverlayZoom';
 
 const FixedDiv = styled('div')`
   pointer-events: none;

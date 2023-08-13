@@ -4,7 +4,7 @@ import React from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import { IoLocateSharp } from 'react-icons/io5';
 
-import useCanvasContext from '~/context/canvas/useCanvasContext';
+import useCanvasContext from '~/context/useCanvasContext';
 import useZoom from '~/store/useZoom';
 import theme from '~/theme';
 

@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 
-import colors from '../colors';
+import colors from '~/theme/colors';
 
 export default css`
   :root,
