@@ -25,7 +25,7 @@ interface Props {
   subtitle?: string;
 }
 
-export default function SidebarItemHeader({ title, subtitle }: Props) {
+export default function ControlHeader({ title, subtitle }: Props) {
   return (
     <H4>
       {title}

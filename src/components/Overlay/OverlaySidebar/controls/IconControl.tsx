@@ -37,7 +37,7 @@ import useUserMode from '~/store/useUserMode';
 import generateUniqueId from '~/utils/generateUniqueId';
 import getDimensionsFromSVGIconObject from '~/utils/getDimensionsFromSVGIconObject';
 
-import SidebarItemHeader from '../components/SidebarItemHeader';
+import ControlHeader from '../components/ControlHeader';
 
 const iconEntries = Object.entries({
   ...aiIcons,
@@ -107,7 +107,7 @@ export default function IconControl({ pageSize = 60 }: Props) {
 
   return (
     <>
-      <SidebarItemHeader title="Search Icons" />
+      <ControlHeader title="Search Icons" />
       <Input
         size="xs"
         type="search"

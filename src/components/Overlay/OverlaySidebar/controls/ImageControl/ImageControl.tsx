@@ -7,7 +7,7 @@ import { BsImage, BsX } from 'react-icons/bs';
 import { FaPlus, FaSearch, FaUnsplash, FaUpload } from 'react-icons/fa';
 
 import { UnderlineLink } from '~/components/Link';
-import SidebarItemHeader from '~/components/Overlay/OverlaySidebar/components/SidebarItemHeader';
+import ControlHeader from '~/components/Overlay/OverlaySidebar/components/ControlHeader';
 import useCanvasContext from '~/context/useCanvasContext';
 import useActiveObjectId from '~/store/useActiveObjectId';
 import useCanvasObjects from '~/store/useCanvasObjects';
@@ -179,7 +179,7 @@ export default function ImageControl({ pageSize = 60 }: Props) {
           </div>
         </Group>
       </Dropzone>
-      <SidebarItemHeader title="Image URL" />
+      <ControlHeader title="Image URL" />
       <ImageUrlForm
         onSubmit={async (event) => {
           event.preventDefault();
@@ -209,7 +209,7 @@ export default function ImageControl({ pageSize = 60 }: Props) {
           </Button>
         </Tooltip>
       </ImageUrlForm>
-      <SidebarItemHeader title="Search Images" />
+      <ControlHeader title="Search Images" />
       <SearchForm
         onSubmit={async (event) => {
           event.preventDefault();
