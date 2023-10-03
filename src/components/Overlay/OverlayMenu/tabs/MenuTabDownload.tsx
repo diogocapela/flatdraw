@@ -39,7 +39,6 @@ export default function MenuTabDownload() {
 
   return (
     <>
-      {' '}
       <H4>Download</H4>
       <DownloadButtonsGridDiv>
         <Button
