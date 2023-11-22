@@ -1,5 +1,5 @@
-import styled from '@emotion/styled';
 import React, { useRef, type PointerEvent, type Touch, type TouchEvent } from 'react';
+import styled from 'styled-components';
 
 import { TRANSPARENT_BACKGROUND_IMAGE } from '~/config/constants';
 import { APP_FIXED_MAIN_UNIQUE_ID } from '~/config/globalElementIds';
@@ -23,7 +23,7 @@ import getDimensionsFromFreeDraw from '~/utils/getDimensionsFromFreeDraw';
 import getRelativeMousePositionOnCanvas from '~/utils/getRelativeMousePositionOnCanvas';
 import isCursorWithinRectangle from '~/utils/isCursorWithinRectangle';
 
-const FixedMain = styled('main')`
+const FixedMain = styled.main`
   position: fixed;
   top: 0;
   bottom: 0;

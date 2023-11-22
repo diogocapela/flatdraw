@@ -1,5 +1,5 @@
-import styled from '@emotion/styled';
 import React, { useEffect, useRef, useState } from 'react';
+import styled from 'styled-components';
 
 import { TRANSPARENT_BACKGROUND_IMAGE } from '~/config/constants';
 import { CANVAS_PREVIEW_UNIQUE_ID } from '~/config/globalElementIds';
@@ -14,7 +14,7 @@ import useCanvasWorkingSize from '~/store/useCanvasWorkingSize';
 import useScrollPosition from '~/store/useScrollPosition';
 import useWindowSize from '~/store/useWindowSize';
 
-const Img = styled('img')`
+const Img = styled.img`
   width: auto;
   max-width: 100%;
   border: 1px solid var(--color-borderPrimary);

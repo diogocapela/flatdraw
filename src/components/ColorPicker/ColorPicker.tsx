@@ -1,6 +1,5 @@
-import { css } from '@emotion/react';
-import styled from '@emotion/styled';
 import React, { useRef, useState, type CSSProperties } from 'react';
+import styled from 'styled-components';
 
 import type { ColorPickerType } from '~/config/types';
 import useOnClickOutside from '~/hooks/useOnClickOutside';
@@ -11,11 +10,11 @@ import ColorPickerElement from './ColorPickerElement';
 
 const SIZE = '30px';
 
-const WrapperDiv = styled('div')`
+const WrapperDiv = styled.div`
   position: relative;
 `;
 
-const ClickButton = styled('button')`
+const ClickButton = styled.button`
   display: grid;
   grid-template-columns: minmax(0, ${SIZE}) minmax(0, 1fr);
   height: ${SIZE};
@@ -29,19 +28,14 @@ const ClickButton = styled('button')`
   text-align: left;
 `;
 
-const ColorDiv = styled('div', {
-  shouldForwardProp: (prop) => prop !== 'background',
-})<{ background: string }>`
+const ColorDiv = styled.div<{ $background: string }>`
   width: 100%;
   height: 100%;
   cursor: pointer;
-
-  ${({ background }) => css`
-    background: ${background};
-  `}
+  background: ${(props) => props.$background};
 `;
 
-const TextDiv = styled('div')`
+const TextDiv = styled.div`
   height: 100%;
   width: 100%;
   font-size: 0.75rem;
@@ -54,7 +48,7 @@ const TextDiv = styled('div')`
   align-items: center;
 `;
 
-const PopupDiv = styled('div')`
+const PopupDiv = styled.div`
   position: absolute;
   top: calc(${SIZE} + 0.5rem);
   left: 0;
@@ -100,7 +94,7 @@ export default function ColorPicker({ color, onChange, disableAlpha = true, type
           setIsOpen(true);
         }}
       >
-        <ColorDiv background={color} />
+        <ColorDiv $background={color} />
         <TextDiv>{color?.toUpperCase()}</TextDiv>
       </ClickButton>
       {isOpen && (

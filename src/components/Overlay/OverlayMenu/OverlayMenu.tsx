@@ -1,14 +1,14 @@
-import styled from '@emotion/styled';
 import { ActionIcon, Menu, Tooltip } from '@mantine/core';
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
+import styled from 'styled-components';
 
 import useModalContext from '~/context/useModalContext';
 import useActiveObjectId from '~/store/useActiveObjectId';
 
 import { menuTabsDefinition } from './menuTabsDefinition';
 
-const WrapperDiv = styled('div')`
+const WrapperDiv = styled.div`
   pointer-events: auto;
 `;
 

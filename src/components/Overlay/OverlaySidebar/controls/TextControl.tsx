@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import { Slider, NativeSelect, Textarea, Button, Tooltip } from '@mantine/core';
 import React, { type ReactNode } from 'react';
 import { FaAlignCenter, FaAlignJustify, FaAlignLeft, FaAlignRight, FaBold, FaItalic, FaSortAmountUp } from 'react-icons/fa';
@@ -13,7 +13,7 @@ import theme from '~/theme';
 
 import ControlHeader from '../components/ControlHeader';
 
-const TextParamsGrid = styled('div')`
+const TextParamsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-gap: ${theme.variables.sidebarGutter};

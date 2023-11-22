@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import { ActionIcon, Tooltip } from '@mantine/core';
 import React, { type ReactNode } from 'react';
 import {
@@ -20,7 +20,7 @@ import theme from '~/theme';
 
 import ControlHeader from '../components/ControlHeader';
 
-const AlignGridDiv = styled('div')`
+const AlignGridDiv = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: ${theme.variables.sidebarGutter};

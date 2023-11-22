@@ -1,7 +1,7 @@
-import styled from '@emotion/styled';
 import { Button, Checkbox } from '@mantine/core';
 import React from 'react';
 import { FaDownload } from 'react-icons/fa';
+import styled from 'styled-components';
 
 import CanvasPreview from '~/components/CanvasPreview';
 import { CANVAS_PREVIEW_UNIQUE_ID } from '~/config/globalElementIds';
@@ -12,7 +12,7 @@ import generateUniqueId from '~/utils/generateUniqueId';
 
 import { H4 } from '../commonTabComponents';
 
-const DownloadButtonsGridDiv = styled('div')`
+const DownloadButtonsGridDiv = styled.div`
   display: inline-grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-gap: 0.5rem;

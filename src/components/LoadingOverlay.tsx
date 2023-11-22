@@ -1,11 +1,11 @@
-import styled from '@emotion/styled';
 import { Loader } from '@mantine/core';
 import React from 'react';
+import styled from 'styled-components';
 
 import metadata from '~/config/metadata';
 import theme from '~/theme';
 
-const Div = styled('div')`
+const Div = styled.div`
   position: fixed;
   top: 0;
   bottom: 0;
@@ -19,7 +19,7 @@ const Div = styled('div')`
   justify-content: center;
 `;
 
-const LogoImg = styled('img')`
+const LogoImg = styled.div`
   width: 120px;
   margin-bottom: 1.5rem;
 `;

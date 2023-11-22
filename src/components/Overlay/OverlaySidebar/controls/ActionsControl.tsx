@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import { Button } from '@mantine/core';
 import React from 'react';
 import { MdControlPointDuplicate, MdOutlineDelete } from 'react-icons/md';
@@ -9,7 +9,7 @@ import generateUniqueId from '~/utils/generateUniqueId';
 
 import ControlHeader from '../components/ControlHeader';
 
-const ActionsUl = styled('ul')`
+const ActionsUl = styled.ul`
   list-style: none;
   padding: 0;
   display: inline-grid;

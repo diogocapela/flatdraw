@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import { Button } from '@mantine/core';
 import React from 'react';
 import { MdFlipToFront, MdFlipToBack } from 'react-icons/md';
@@ -8,7 +8,7 @@ import useCanvasObjects from '~/store/useCanvasObjects';
 
 import ControlHeader from '../components/ControlHeader';
 
-const ActionsUl = styled('ul')`
+const ActionsUl = styled.ul`
   list-style: none;
   padding: 0;
   display: inline-grid;

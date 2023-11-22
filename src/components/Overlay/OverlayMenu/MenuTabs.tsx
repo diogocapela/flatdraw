@@ -1,7 +1,7 @@
-import styled from '@emotion/styled';
 import { Tabs } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import React, { useEffect } from 'react';
+import styled from 'styled-components';
 
 import useActiveObjectId from '~/store/useActiveObjectId';
 import theme from '~/theme';
@@ -13,20 +13,20 @@ import MenuTabDownload from './tabs/MenuTabDownload';
 import MenuTabLayers from './tabs/MenuTabLayers';
 import MenuTabSettings from './tabs/MenuTabSettings';
 
-const WrapperDiv = styled('div')`
+const WrapperDiv = styled.div`
   width: 100%;
   max-width: 100%;
   pointer-events: all;
 `;
 
-const TabDiv = styled('div')`
+const TabDiv = styled.div`
   padding: 6px 2px;
   display: flex;
   align-items: center;
   gap: 0.65rem;
 `;
 
-const PanelContentDiv = styled('div')`
+const PanelContentDiv = styled.div`
   position: relative;
   height: 700px;
   max-height: 80vh;

@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import { ActionIcon, Tooltip } from '@mantine/core';
 import React, { type ReactNode } from 'react';
 import { BsSquare, BsCircle, BsImageFill } from 'react-icons/bs';
@@ -6,19 +5,20 @@ import { FaMousePointer } from 'react-icons/fa';
 import { HiPencil } from 'react-icons/hi';
 import { RiImageLine } from 'react-icons/ri';
 import { RxText } from 'react-icons/rx';
+import styled from 'styled-components';
 
 import type { UserMode } from '~/config/types';
 import useActiveObjectId from '~/store/useActiveObjectId';
 import useUserMode from '~/store/useUserMode';
 import theme from '~/theme';
 
-const Nav = styled('div')`
+const Nav = styled.div`
   display: flex;
   align-items: center;
   gap: ${theme.variables.overlayItemsGutter};
 `;
 
-const Div = styled('div')`
+const Div = styled.div`
   pointer-events: auto;
   background: var(--color-bgPrimary);
   border-radius: 0.25rem;
@@ -29,7 +29,7 @@ const Div = styled('div')`
   border: 0.0625rem solid var(--color-borderPrimary);
 `;
 
-const Ul = styled('ul')`
+const Ul = styled.ul`
   width: 100%;
   height: 100%;
   list-style: none;

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import { Button, Checkbox, NumberInput, Select } from '@mantine/core';
 import React from 'react';
 import { RxHeight, RxWidth } from 'react-icons/rx';
@@ -17,7 +17,7 @@ import getSizePresetOptions from '~/utils/getSizePresetOptions';
 import SizePresetSelectItem from './SizePresetSelectItem';
 import { H4 } from '../../commonTabComponents';
 
-const CanvasSizeGridDiv = styled('div')`
+const CanvasSizeGridDiv = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0.75rem;
@@ -28,7 +28,7 @@ const CanvasSizeGridDiv = styled('div')`
   }
 `;
 
-const BackgroundColorDiv = styled('div')`
+const BackgroundColorDiv = styled.div`
   margin-top: 0.7rem;
   margin-bottom: 1rem;
   display: grid;
@@ -36,7 +36,7 @@ const BackgroundColorDiv = styled('div')`
   grid-gap: 1rem;
 `;
 
-const PresetDiv = styled('div')`
+const PresetDiv = styled.div`
   margin-bottom: 1rem;
 `;
 

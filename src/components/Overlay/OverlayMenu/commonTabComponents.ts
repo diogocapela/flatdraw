@@ -1,6 +1,6 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
-export const H4 = styled('h4')`
+export const H4 = styled.h4`
   display: flex;
   align-items: center;
   gap: 0.35rem;
@@ -13,6 +13,6 @@ export const H4 = styled('h4')`
   }
 `;
 
-export const TextP = styled('p')`
+export const TextP = styled.p`
   font-size: 0.95rem;
 `;

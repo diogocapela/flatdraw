@@ -1,8 +1,8 @@
-import styled from '@emotion/styled';
 import NextLink from 'next/link';
 import React, { type ReactNode, type CSSProperties } from 'react';
+import styled from 'styled-components';
 
-const A = styled('a')`
+const A = styled.a`
   display: inline-block;
   color: inherit;
 

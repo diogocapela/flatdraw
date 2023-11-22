@@ -1,10 +1,10 @@
-import styled from '@emotion/styled';
 import { Input, Button, Loader, Tooltip, Group, Text } from '@mantine/core';
 import { Dropzone, IMAGE_MIME_TYPE } from '@mantine/dropzone';
 import { orderBy } from 'lodash';
 import React, { useEffect, useRef, useState } from 'react';
 import { BsImage, BsX } from 'react-icons/bs';
 import { FaPlus, FaSearch, FaUnsplash, FaUpload } from 'react-icons/fa';
+import styled from 'styled-components';
 
 import { UnderlineLink } from '~/components/Link';
 import ControlHeader from '~/components/Overlay/OverlaySidebar/components/ControlHeader';
@@ -23,7 +23,7 @@ import notification from '~/utils/notification';
 
 import UnsplashImageButton, { type OptionItem } from './UnsplashImageButton';
 
-const GridDiv = styled('div')`
+const GridDiv = styled.div`
   width: 100%;
   pointer-events: auto;
   display: grid;
@@ -33,19 +33,19 @@ const GridDiv = styled('div')`
   border-radius: 0.25rem;
 `;
 
-const ImageUrlForm = styled('form')`
+const ImageUrlForm = styled.form`
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, auto);
   grid-gap: 5px;
 `;
 
-const SearchForm = styled('form')`
+const SearchForm = styled.form`
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, auto);
   grid-gap: 5px;
 `;
 
-const PoweredByP = styled('p')`
+const PoweredByP = styled.p`
   margin: 0;
   font-size: 0.7rem;
   margin-top: 0.5rem;
@@ -56,7 +56,7 @@ const PoweredByP = styled('p')`
   }
 `;
 
-const LoadingDiv = styled('div')`
+const LoadingDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import { ActionIcon, Tooltip } from '@mantine/core';
 import React from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
@@ -8,7 +8,7 @@ import useCanvasContext from '~/context/useCanvasContext';
 import useZoom from '~/store/useZoom';
 import theme from '~/theme';
 
-const Ul = styled('ul')`
+const Ul = styled.ul`
   pointer-events: auto;
   width: 100%;
   list-style: none;

@@ -1,8 +1,8 @@
-import { css } from '@emotion/react';
+import { createGlobalStyle } from 'styled-components';
 
 import colors from '~/theme/colors';
 
-export default css`
+export const GlobalStyle = createGlobalStyle`
   :root,
   :root.light {
     ${Object.entries(colors)

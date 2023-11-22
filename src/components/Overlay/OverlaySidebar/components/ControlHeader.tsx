@@ -1,7 +1,7 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import React from 'react';
 
-const H4 = styled('h4')`
+const H4 = styled.h4`
   display: flex;
   align-items: center;
   gap: 0.35rem;

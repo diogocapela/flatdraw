@@ -1,4 +1,3 @@
-import { Global } from '@emotion/react';
 import { MantineProvider, ColorSchemeProvider, type ColorScheme } from '@mantine/core';
 import { ModalsProvider } from '@mantine/modals';
 import { Notifications } from '@mantine/notifications';
@@ -20,7 +19,7 @@ import useCookies from '~/hooks/useCookies';
 import useAvailableFonts from '~/store/useAvailableFonts';
 import theme from '~/theme';
 import colors from '~/theme/colors';
-import globalStyles from '~/theme/styles/global';
+import { GlobalStyle } from '~/theme/styles/global';
 import getAvailableFonts from '~/utils/getAvailableFonts';
 
 function RouterTransition() {
@@ -136,7 +135,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
         <meta name="twitter:site" content={`@${metadata.social.twitter}`} />
         <meta name="twitter:creator" content={`@${metadata.social.twitter}`} />
       </NextHead>
-      <Global styles={globalStyles} />
+      <GlobalStyle />
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
         <ColorSchemeContextProvider>
           <CanvasContextProvider>

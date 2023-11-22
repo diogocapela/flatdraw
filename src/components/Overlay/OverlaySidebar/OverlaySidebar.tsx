@@ -1,5 +1,5 @@
-import styled from '@emotion/styled';
 import React from 'react';
+import styled from 'styled-components';
 
 import useActionMode from '~/store/useActionMode';
 import useActiveObjectId from '~/store/useActiveObjectId';
@@ -20,7 +20,7 @@ import StrokeColorControl from './controls/StrokeColorControl';
 import StrokeWidthControl from './controls/StrokeWidthControl';
 import TextControl from './controls/TextControl';
 
-const Aside = styled('aside')`
+const Aside = styled.aside`
   pointer-events: auto;
   background: var(--color-bgPrimary);
   border: 1px solid var(--color-borderPrimary);

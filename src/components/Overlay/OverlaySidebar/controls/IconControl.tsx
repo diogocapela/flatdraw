@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import { Input, Button, ActionIcon, Tooltip } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import ReactDOMServer from 'react-dom/server';
@@ -68,7 +68,7 @@ const iconEntries = Object.entries({
   ...wiIcons,
 });
 
-const GridDiv = styled('div')`
+const GridDiv = styled.div`
   width: 100%;
   pointer-events: auto;
   display: grid;

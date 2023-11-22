@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import { ActionIcon, Tooltip } from '@mantine/core';
 import startCase from 'lodash/startCase';
 import React from 'react';
@@ -9,14 +9,14 @@ import theme from '~/theme';
 
 import { H4, TextP } from '../commonTabComponents';
 
-const LayersUl = styled('ul')`
+const LayersUl = styled.ul`
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0.75rem;
 `;
 
-const LayerLi = styled('li')`
+const LayerLi = styled.li`
   border: 1px solid var(--color-borderPrimary);
   border-radius: 5px;
   overflow: hidden;

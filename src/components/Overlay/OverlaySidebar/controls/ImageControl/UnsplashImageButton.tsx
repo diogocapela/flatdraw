@@ -1,10 +1,10 @@
-import styled from '@emotion/styled';
 import { Menu } from '@mantine/core';
 import { startCase } from 'lodash';
 import React, { useState } from 'react';
 import { BiUser } from 'react-icons/bi';
 import { CgClose } from 'react-icons/cg';
 import { MdDownload } from 'react-icons/md';
+import styled from 'styled-components';
 
 import type { ObjectDimensions, UnsplashImage } from '~/config/types';
 import useCanvasContext from '~/context/useCanvasContext';
@@ -12,7 +12,7 @@ import getDimensionsFromImage from '~/utils/getDimensionsFromImage';
 import getImageElementFromUrl from '~/utils/getImageElementFromUrl';
 import notification from '~/utils/notification';
 
-const ImageButton = styled('button')`
+const ImageButton = styled.button`
   width: 100%;
   height: 100%;
   padding: 0;
@@ -21,7 +21,7 @@ const ImageButton = styled('button')`
   cursor: pointer;
 `;
 
-const Img = styled('img')`
+const Img = styled.img`
   width: 100%;
   max-width: 100%;
   object-fit: cover;

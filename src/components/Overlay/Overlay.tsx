@@ -1,5 +1,5 @@
-import styled from '@emotion/styled';
 import React from 'react';
+import styled from 'styled-components';
 
 import OverlayMenu from '~/components/Overlay/OverlayMenu';
 import OverlayNavbar from '~/components/Overlay/OverlayNavbar';
@@ -7,7 +7,7 @@ import OverlaySidebar from '~/components/Overlay/OverlaySidebar';
 import OverlayZoom from '~/components/Overlay/OverlayZoom';
 import theme from '~/theme';
 
-const FixedDiv = styled('div')`
+const FixedDiv = styled.div`
   pointer-events: none;
   position: fixed;
   top: ${theme.variables.overlayGutter};
@@ -18,7 +18,7 @@ const FixedDiv = styled('div')`
   user-select: none;
 `;
 
-const TopDiv = styled('div')`
+const TopDiv = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -29,7 +29,7 @@ const TopDiv = styled('div')`
   gap: ${theme.variables.overlayGutter};
 `;
 
-const LeftDiv = styled('div')`
+const LeftDiv = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
@@ -40,7 +40,7 @@ const LeftDiv = styled('div')`
   }
 `;
 
-const BottomRightDiv = styled('div')`
+const BottomRightDiv = styled.div`
   position: absolute;
   bottom: 0;
   right: 0;

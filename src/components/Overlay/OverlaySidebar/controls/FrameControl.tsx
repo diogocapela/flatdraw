@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import { NumberInput } from '@mantine/core';
 import React from 'react';
 
@@ -8,7 +8,7 @@ import theme from '~/theme';
 
 import ControlHeader from '../components/ControlHeader';
 
-const FrameGridDiv = styled('div')`
+const FrameGridDiv = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-gap: ${theme.variables.sidebarGutter};
