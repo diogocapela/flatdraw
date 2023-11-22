@@ -19,7 +19,7 @@ const Div = styled.div`
   justify-content: center;
 `;
 
-const LogoImg = styled.div`
+const LogoImg = styled.img`
   width: 120px;
   margin-bottom: 1.5rem;
 `;

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
 import { NumberInput } from '@mantine/core';
 import React from 'react';
+import styled from 'styled-components';
 
 import useActiveObjectId from '~/store/useActiveObjectId';
 import useCanvasObjects from '~/store/useCanvasObjects';

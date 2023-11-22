@@ -1,8 +1,8 @@
-import styled from 'styled-components';
 import { Slider, NativeSelect, Textarea, Button, Tooltip } from '@mantine/core';
 import React, { type ReactNode } from 'react';
 import { FaAlignCenter, FaAlignJustify, FaAlignLeft, FaAlignRight, FaBold, FaItalic, FaSortAmountUp } from 'react-icons/fa';
 import { MdAlignVerticalTop, MdAlignVerticalCenter, MdAlignVerticalBottom } from 'react-icons/md';
+import styled from 'styled-components';
 
 import ColorPicker from '~/components/ColorPicker/ColorPicker';
 import useActiveObjectId from '~/store/useActiveObjectId';

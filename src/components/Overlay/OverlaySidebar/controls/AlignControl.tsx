@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import { ActionIcon, Tooltip } from '@mantine/core';
 import React, { type ReactNode } from 'react';
 import {
@@ -12,6 +11,7 @@ import {
   BsArrowUpRight,
   BsCircle,
 } from 'react-icons/bs';
+import styled from 'styled-components';
 
 import useActiveObjectId from '~/store/useActiveObjectId';
 import useCanvasObjects from '~/store/useCanvasObjects';

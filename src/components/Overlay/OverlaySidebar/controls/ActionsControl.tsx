@@ -1,7 +1,7 @@
-import styled from 'styled-components';
 import { Button } from '@mantine/core';
 import React from 'react';
 import { MdControlPointDuplicate, MdOutlineDelete } from 'react-icons/md';
+import styled from 'styled-components';
 
 import useActiveObjectId from '~/store/useActiveObjectId';
 import useCanvasObjects from '~/store/useCanvasObjects';

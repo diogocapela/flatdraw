@@ -1,8 +1,8 @@
-import styled from 'styled-components';
 import { ActionIcon, Tooltip } from '@mantine/core';
 import React from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import { IoLocateSharp } from 'react-icons/io5';
+import styled from 'styled-components';
 
 import useCanvasContext from '~/context/useCanvasContext';
 import useZoom from '~/store/useZoom';

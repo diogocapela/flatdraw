@@ -1,8 +1,8 @@
-import styled from 'styled-components';
 import { Button, Checkbox, NumberInput, Select } from '@mantine/core';
 import React from 'react';
 import { RxHeight, RxWidth } from 'react-icons/rx';
 import { TbTrashX } from 'react-icons/tb';
+import styled from 'styled-components';
 
 import ColorPicker from '~/components/ColorPicker';
 import useCanvasContext from '~/context/useCanvasContext';

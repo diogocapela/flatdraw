@@ -1,8 +1,8 @@
-import styled from 'styled-components';
 import { ActionIcon, Tooltip } from '@mantine/core';
 import startCase from 'lodash/startCase';
 import React from 'react';
 import { BiTrash } from 'react-icons/bi';
+import styled from 'styled-components';
 
 import useCanvasObjects from '~/store/useCanvasObjects';
 import theme from '~/theme';

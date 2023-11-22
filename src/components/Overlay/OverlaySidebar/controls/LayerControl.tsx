@@ -1,7 +1,7 @@
-import styled from 'styled-components';
 import { Button } from '@mantine/core';
 import React from 'react';
 import { MdFlipToFront, MdFlipToBack } from 'react-icons/md';
+import styled from 'styled-components';
 
 import useActiveObjectId from '~/store/useActiveObjectId';
 import useCanvasObjects from '~/store/useCanvasObjects';

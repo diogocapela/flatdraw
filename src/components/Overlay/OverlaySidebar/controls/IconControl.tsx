@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import { Input, Button, ActionIcon, Tooltip } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import ReactDOMServer from 'react-dom/server';
@@ -28,6 +27,7 @@ import * as tfiIcons from 'react-icons/tfi';
 import * as tiIcons from 'react-icons/ti';
 import * as vscIcons from 'react-icons/vsc';
 import * as wiIcons from 'react-icons/wi';
+import styled from 'styled-components';
 
 import useCanvasContext from '~/context/useCanvasContext';
 import useActiveObjectId from '~/store/useActiveObjectId';
