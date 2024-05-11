@@ -1,4 +1,4 @@
-Sitemap: https://flatdraw.com/sitemap.xml
+Sitemap: https://flatdraw.pages.dev/sitemap.xml
 
 User-agent: *
 Allow: /

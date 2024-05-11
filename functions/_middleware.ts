@@ -1,4 +1,4 @@
-const allowed = ['http://localhost:3000', 'https://flatdraw.com'];
+const allowed = ['http://localhost:3000', 'https://flatdraw.pages.dev', 'https://flatdraw.com'];
 
 export const onRequestOptions: PagesFunction = async () => {
   return new Response(null, {

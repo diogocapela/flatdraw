@@ -6,7 +6,7 @@
 	http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 	<url>
-		<loc>https://flatdraw.com</loc>
+		<loc>https://flatdraw.pages.dev</loc>
 		<changefreq>monthly</changefreq>
 		<priority>1.00</priority>
 	</url>
